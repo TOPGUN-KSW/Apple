@@ -35,8 +35,11 @@ There are two universal ways to measure sugar levels: The destructive sugar leve
 ### Machine Learning
 
 ### Deep Learning
-python 
-
+    - Python 3.7.15 
+    - tensorflow 2.9.2
+    - keras 2.9.0
+    - VGG16
+    - EfficientNetB0
 
 
 
