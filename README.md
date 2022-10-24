@@ -6,7 +6,7 @@
 ## Team TopGun
     
 | Name         |Call sign| University               | Department                                   | Email               | Github    |
-| :-----------------:| :---------: | :------------------------: | :--------------------------------------------: | :-------------------: | :------------------------------: |
+| :-----------------:| :---------: | :------------------------: | :------------------------------------: | :-------------------: | :-------------------------: |
 | Heejun Park |YODA   | Yeonsei Univ.| Computer and Telecommunications Engineering|parkie0517@gmail.com| https://github.com/parkie0517|
 | Hanbi Kim |PHEONIX  | Chungbuk Nat'l Univ.   | Computer Science | hanbikim20@g.cbnu.ac.kr  | https://github.com/hanbikim    |
 | Jeongho Ha |JAY | Jeju Nat'l Univ.       | Computer Engineering | hjh4212@naver.com| https://github.com/hjh1248    |
