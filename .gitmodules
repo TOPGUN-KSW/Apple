@@ -1,0 +1,3 @@
+[submodule "predict_apple_sweetness"]
+	path = predict_apple_sweetness
+	url = https://github.com/hjh1248/predict_apple_sweetness.git
