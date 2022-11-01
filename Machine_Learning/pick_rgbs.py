@@ -3,9 +3,9 @@ import numpy as np
 import glob
 import pandas as pd
 import natsort
-images = natsort.natsorted(glob.glob('./rembg_apples/*.png')) #폴더에 있는 파일들 숫자 순서대로 불러오기
+images = natsort.natsorted(glob.glob('./Machine_Learning/rembg_apples/*.png')) #폴더에 있는 파일들 숫자 순서대로 불러오기
 file_count = 0 #불러온 파일 숫자
-text=open('C:/python/apple_sweet/Apple_rgbs.txt', 'w')
+text=open('C:/Machine_Learning/python/apple_sweet/Apple_rgbs.txt', 'w')
 print("1rd_red, 1rd_r, 1rd_rg, 1rd_most_red, 1rd_least_red, 1rd_most_yellow, 1rd_size, 2nd_red, 2rd_r, 2rd_rg, 2rd_most_red, 2rd_least_red, 2rd_most_yellow, 2nd_size, 3rd_red, 3rd_r, 3rd_rg, 3rd_most_red, 3rd_least_red, 3rd_most_yellow, 3rd_size, 4th_red, 4rd_r, 4rd_rg, 4rd_most_red, 4rd_least_red, 4rd_most_yellow, 4th_size, 5th_red, 5rd_r, 5rd_rg, 5rd_most_red, 5rd_least_red, 5rd_most_yellow, 5th_size, 6th_red, 6rd_r, 6rd_rg, 6rd_most_red, 6rd_least_red, 6rd_most_yellow, 6th_size, height/area", file=text) #특성
 for fname in images:
   im = Image.open(fname)

@@ -3,12 +3,12 @@ import numpy as np
 import glob
 import pandas as pd
 import natsort
-images = natsort.natsorted(glob.glob('./rembg_apples/*.png')) #폴더에 있는 파일들 숫자 순서대로 불러오기
+images = natsort.natsorted(glob.glob('./Machine_Learning/new_rembg_apples/*.png')) #폴더에 있는 파일들 숫자 순서대로 불러오기
 file_count = 0 #불러온 파일 숫자
-text=open('./Apple_attribute2.txt', 'w')
+text=open('./Machine_Learning/Apple_attribute.txt', 'w')
 # print("1rd_red, 1rd_green, 1rd_blue, 1rd_r, 1rd_rg, 1rd_size, 2nd_red, 2nd_green, 2nd_blue, 2rd_r, 2rd_rg, 2nd_size, 3rd_red, 3rd_green, 3rd_blue, 3rd_r, 3rd_rg, 3rd_size, 4th_red, 4th_green, 4th_blue, 4rd_r, 4rd_rg, 4th_size, 5th_red, 5th_green, 5th_blue, 5rd_r, 5rd_rg, 5th_size, 6th_red, 6th_green, 6th_blue, 6rd_r, 6rd_rg, 6th_size, height/area", file=text) #특성
-# print("1rd_red, 1rd_green, 1rd_blue, 1rd_r, 1rd_rg, 1rd_most_red, 1rd_least_red, 1rd_most_yellow, 1rd_size, 2nd_red, 2nd_green, 2nd_blue, 2rd_r, 2rd_rg, 2rd_most_red, 2rd_least_red, 2rd_most_yellow, 2nd_size, 3rd_red, 3rd_green, 3rd_blue, 3rd_r, 3rd_rg, 3rd_most_red, 3rd_least_red, 3rd_most_yellow, 3rd_size, 4th_red, 4th_green, 4th_blue, 4rd_r, 4rd_rg, 4rd_most_red, 4rd_least_red, 4rd_most_yellow, 4th_size, 5th_red, 5th_green, 5th_blue, 5rd_r, 5rd_rg, 5rd_most_red, 5rd_least_red, 5rd_most_yellow, 5th_size, 6th_red, 6th_green, 6th_blue, 6rd_r, 6rd_rg, 5rd_most_red, 5rd_least_red, 5rd_most_yellow, 6th_size, height/area", file=text) #특성
-print("1rd_red, 1rd_green, 1rd_blue, 1rd_r, 1rd_rg, 1rd_most_red, 1rd_least_red, 1rd_most_yellow, 1rd_size, 2nd_red, 2nd_green, 2nd_blue, 2rd_r, 2rd_rg, 2rd_most_red, 2rd_least_red, 2rd_most_yellow, 2nd_size, height/area", file=text) #특성
+print("1rd_red, 1rd_green, 1rd_blue, 1rd_r, 1rd_rg, 1rd_most_red, 1rd_least_red, 1rd_most_yellow, 1rd_size, 2nd_red, 2nd_green, 2nd_blue, 2rd_r, 2rd_rg, 2rd_most_red, 2rd_least_red, 2rd_most_yellow, 2nd_size, 3rd_red, 3rd_green, 3rd_blue, 3rd_r, 3rd_rg, 3rd_most_red, 3rd_least_red, 3rd_most_yellow, 3rd_size, 4th_red, 4th_green, 4th_blue, 4rd_r, 4rd_rg, 4rd_most_red, 4rd_least_red, 4rd_most_yellow, 4th_size, 5th_red, 5th_green, 5th_blue, 5rd_r, 5rd_rg, 5rd_most_red, 5rd_least_red, 5rd_most_yellow, 5th_size, 6th_red, 6th_green, 6th_blue, 6rd_r, 6rd_rg, 5rd_most_red, 5rd_least_red, 5rd_most_yellow, 6th_size, height/area", file=text) #특성
+# print("1rd_red, 1rd_green, 1rd_blue, 1rd_r, 1rd_rg, 1rd_most_red, 1rd_least_red, 1rd_most_yellow, 1rd_size, 2nd_red, 2nd_green, 2nd_blue, 2rd_r, 2rd_rg, 2rd_most_red, 2rd_least_red, 2rd_most_yellow, 2nd_size, height/area", file=text) #특성
 for fname in images:
   im = Image.open(fname)
   pix = np.array(im)
@@ -64,26 +64,25 @@ for fname in images:
     print(least_red, file=text, end =', ')
     print(most_yellow, file=text, end =', ')
     print(count, file=text, end =', ')
-    print(count/area, file=text)    
-  # elif file_count % 6 == 0:
-  #   print(average_red, file=text, end =', ')
-  #   print(average_green, file=text, end =', ')
-  #   print(average_blue, file=text, end =', ')
-  #   print(r, file=text, end =', ')
-  #   print(rg, file=text, end =', ')
-  #   # print(most_red, file=text, end =', ')
-  #   # print(least_red, file=text, end =', ')
-  #   # print(most_yellow, file=text, end =', ')
-  #   print(count, file=text, end =', ')
-  #   print(count/area, file=text)
-  # else:
-  #   print(average_red, file=text, end =', ')
-  #   print(average_green, file=text, end =', ')
-  #   print(average_blue, file=text, end =', ')
-  #   print(r, file=text, end =', ')
-  #   print(rg, file=text, end =', ')
-  #   # print(most_red, file=text, end =', ')
-  #   # print(least_red, file=text, end =', ')
-  #   # print(most_yellow, file=text, end =', ')
-  #   print(count, file=text, end = ', ')
+  elif file_count % 6 == 0:
+    print(average_red, file=text, end =', ')
+    print(average_green, file=text, end =', ')
+    print(average_blue, file=text, end =', ')
+    print(r, file=text, end =', ')
+    print(rg, file=text, end =', ')
+    print(most_red, file=text, end =', ')
+    print(least_red, file=text, end =', ')
+    print(most_yellow, file=text, end =', ')
+    print(count, file=text, end =', ')
+    print(count/area, file=text)
+  else:
+    print(average_red, file=text, end =', ')
+    print(average_green, file=text, end =', ')
+    print(average_blue, file=text, end =', ')
+    print(r, file=text, end =', ')
+    print(rg, file=text, end =', ')
+    print(most_red, file=text, end =', ')
+    print(least_red, file=text, end =', ')
+    print(most_yellow, file=text, end =', ')
+    print(count, file=text, end = ', ')
 text.close

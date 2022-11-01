@@ -1,6 +1,6 @@
 from PIL import Image
 import numpy as np
-im = Image.open('./rembg_apples/2-1.png')
+im = Image.open('./Machine_Learning/rembg_apples/2-1.png')
 pix = np.array(im)
 c = np.arange(1,im.size[0],10)
 d = np.arange(1,im.size[1],10)

@@ -4,9 +4,9 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 
-at = pd.read_csv('./apple_attribute.csv')
+at = pd.read_csv('./Machine_Learning/apple_attribute.csv')
 apple_attribute = at.to_numpy()
-sw = pd.read_csv('./Apple_sweetness_c.csv')
+sw = pd.read_csv('./Machine_Learning/Apple_sweetness_c.csv')
 apple_sweetness = sw.to_numpy()
 train_input, test_input, train_target, test_target = train_test_split(apple_attribute, apple_sweetness, test_size = 0.2)
 

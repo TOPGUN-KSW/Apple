@@ -5,9 +5,9 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 
-at = pd.read_csv('./Apple_attribute.csv')
+at = pd.read_csv('./Machine_Learning/Apple_attribute.csv')
 apple_attribute = at.to_numpy()
-sw = pd.read_csv('./Apple_sweetness_c.csv')
+sw = pd.read_csv('./Machine_Learning/Apple_sweetness_c.csv')
 # bins = [9, 12.5, 14.5, 18]
 # labels = ['low', 'normal', 'sweet']
 # cuts = pd.cut(sw, bins, right = False, labels = labels)

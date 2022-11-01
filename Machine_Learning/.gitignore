@@ -1,5 +1,5 @@
-apples
-rembg_apples
+*.jpg
+*.png
 *.txt
 *.pptx
 rembg-main
