@@ -6,13 +6,13 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import Ridge
 
 
-at = pd.read_csv('./Machine_Learning/Apple_attribute.csv')
+at = pd.read_csv('./Machine_Learning/Apple_attribute_seperate.csv')
 apple_attribute = at.to_numpy()
-sw = pd.read_csv('./Machine_Learning/Apple_sweetness.csv')
+sw = pd.read_csv('./Machine_Learning/Apple_sweetness6.csv')
 apple_sweetness = sw.to_numpy()
-train_input, test_input, train_target, test_target = train_test_split(apple_attribute, apple_sweetness, test_size=0.2, random_state=5)
+train_input, test_input, train_target, test_target = train_test_split(apple_attribute, apple_sweetness, test_size=0.2)
 
-poly = PolynomialFeatures()
+poly = PolynomialFeatures(degree=6)
 poly.fit(train_input)
 train_poly = poly.transform(train_input)
 test_poly = poly.transform(test_input)
@@ -22,28 +22,28 @@ ss.fit(train_poly)
 train_scaled = ss.transform(train_poly)
 test_scaled = ss.transform(test_poly)
 
-ridge = Ridge(alpha = 500)
+ridge = Ridge(alpha = 1)
 ridge.fit(train_scaled, train_target)
 print(round(ridge.score(train_scaled, train_target), 4))
 print(round(ridge.score(test_scaled, test_target), 4))
 # print(test_scaled[1])
 # print(ridge.predict(test_scaled))
 
-# import matplotlib.pyplot as plt #Ridge alpha값 찾기
-# train_score = [] 
-# test_score = []
+import matplotlib.pyplot as plt #Ridge alpha값 찾기
+train_score = [] 
+test_score = []
 
-# alpha_list = [1, 10, 100, 1000, 5000, 10000]
-# for alpha in alpha_list:
-#   full_ridge = Ridge(alpha=alpha)
-#   full_ridge.fit(train_scaled, train_target)
-#   train_score.append(full_ridge.score(train_scaled, train_target))
-#   test_score.append(full_ridge.score(test_scaled, test_target))  
-# plt.plot(np.log10(alpha_list), train_score)
-# plt.plot(np.log10(alpha_list), test_score)
-# plt.xlabel('alpha')
-# plt.ylabel('R^2')
-# plt.show()
+alpha_list = [0.001, 0.01, 0.1, 1, 10, 100, 1000]
+for alpha in alpha_list:
+  full_ridge = Ridge(alpha=alpha)
+  full_ridge.fit(train_scaled, train_target)
+  train_score.append(full_ridge.score(train_scaled, train_target))
+  test_score.append(full_ridge.score(test_scaled, test_target))  
+plt.plot(np.log10(alpha_list), train_score)
+plt.plot(np.log10(alpha_list), test_score)
+plt.xlabel('alpha')
+plt.ylabel('R^2')
+plt.show()
 
 # from sklearn.linear_model import Lasso
 # full_lasso = Lasso(alpha = 0.1)

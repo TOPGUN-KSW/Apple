@@ -54,16 +54,6 @@ for fname in images:
     print(most_yellow, file=text, end =', ')
     print(count, file=text, end =', ')
     area = count
-  elif file_count % 6 == 2:
-    print(average_red, file=text, end =', ')
-    print(average_green, file=text, end =', ')
-    print(average_blue, file=text, end =', ')
-    print(r, file=text, end =', ')
-    print(rg, file=text, end =', ')
-    print(most_red, file=text, end =', ')
-    print(least_red, file=text, end =', ')
-    print(most_yellow, file=text, end =', ')
-    print(count, file=text, end =', ')
   elif file_count % 6 == 0:
     print(average_red, file=text, end =', ')
     print(average_green, file=text, end =', ')
@@ -74,7 +64,7 @@ for fname in images:
     print(least_red, file=text, end =', ')
     print(most_yellow, file=text, end =', ')
     print(count, file=text, end =', ')
-    print(count/area, file=text)
+    print(round(count/area, 4), file=text)
   else:
     print(average_red, file=text, end =', ')
     print(average_green, file=text, end =', ')

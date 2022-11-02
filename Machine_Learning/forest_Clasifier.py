@@ -4,13 +4,13 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 
-at = pd.read_csv('./Machine_Learning/apple_attribute.csv')
+at = pd.read_csv('./Machine_Learning/apple_attribute_seperate.csv')
 apple_attribute = at.to_numpy()
-sw = pd.read_csv('./Machine_Learning/Apple_sweetness_c.csv')
+sw = pd.read_csv('./Machine_Learning/Apple_sweetness6_c.csv')
 apple_sweetness = sw.to_numpy()
 train_input, test_input, train_target, test_target = train_test_split(apple_attribute, apple_sweetness, test_size = 0.2)
 
-poly = PolynomialFeatures()
+poly = PolynomialFeatures(degree=5)
 poly.fit(train_input)
 train_poly = poly.transform(train_input)
 test_poly = poly.transform(test_input)
