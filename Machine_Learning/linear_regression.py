@@ -6,13 +6,13 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import Ridge
 
 
-at = pd.read_csv('./Machine_Learning/Apple_attribute_seperate.csv')
+at = pd.read_csv('./Machine_Learning/Apple_attribute.csv')
 apple_attribute = at.to_numpy()
-sw = pd.read_csv('./Machine_Learning/Apple_sweetness6.csv')
+sw = pd.read_csv('./Machine_Learning/Apple_sweetness.csv')
 apple_sweetness = sw.to_numpy()
 train_input, test_input, train_target, test_target = train_test_split(apple_attribute, apple_sweetness, test_size=0.2)
 
-poly = PolynomialFeatures(degree=6)
+poly = PolynomialFeatures(degree=3)
 poly.fit(train_input)
 train_poly = poly.transform(train_input)
 test_poly = poly.transform(test_input)
