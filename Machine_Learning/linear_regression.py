@@ -6,10 +6,12 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import Ridge
 
 
-at = pd.read_csv('./Machine_Learning/Apple_attribute.csv')
+at = pd.read_csv('./Machine_Learning/Apple_attribute6.csv')
 apple_attribute = at.to_numpy()
-sw = pd.read_csv('./Machine_Learning/Apple_sweetness.csv')
+sw = pd.read_csv('./Machine_Learning/Apple_sweetness6.csv')
 apple_sweetness = sw.to_numpy()
+train_input = apple_attribute
+train_target = apple_sweetness
 train_input, test_input, train_target, test_target = train_test_split(apple_attribute, apple_sweetness, test_size=0.2)
 
 poly = PolynomialFeatures(degree=3)
@@ -22,7 +24,7 @@ ss.fit(train_poly)
 train_scaled = ss.transform(train_poly)
 test_scaled = ss.transform(test_poly)
 
-ridge = Ridge(alpha = 1)
+ridge = Ridge(alpha = 0.1)
 ridge.fit(train_scaled, train_target)
 print(round(ridge.score(train_scaled, train_target), 4))
 print(round(ridge.score(test_scaled, test_target), 4))

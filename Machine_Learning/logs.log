@@ -1,0 +1,485 @@
+2022-11-09 13:54:47,191:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-11-09 13:54:47,191:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-11-09 13:54:47,191:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-11-09 13:54:47,191:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-11-09 13:55:05,740:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-11-09 13:55:08,037:INFO:PyCaret RegressionExperiment
+2022-11-09 13:55:08,038:INFO:Logging name: reg-default-name
+2022-11-09 13:55:08,038:INFO:ML Usecase: MLUsecase.REGRESSION
+2022-11-09 13:55:08,038:INFO:version 3.0.0.rc4
+2022-11-09 13:55:08,038:INFO:Initializing setup()
+2022-11-09 13:55:08,038:INFO:self.USI: 1b51
+2022-11-09 13:55:08,038:INFO:self.variable_keys: {'exp_id', 'logging_param', 'gpu_param', 'log_plots_param', 'transform_target_method_param', 'y_test', 'memory', 'fold_shuffle_param', 'X_test', '_gpu_n_jobs_param', '_ml_usecase', 'X', 'seed', '_available_plots', 'fold_generator', '_all_models_internal', 'display_container', 'variable_keys', 'idx', 'exp_name_log', 'X_train', '_all_models', 'y', 'html_param', '_all_metrics', 'fold_groups_param', 'master_model_container', 'pipeline', 'target_param', 'y_train', 'transform_target_param', 'data', 'USI', 'n_jobs_param'}
+2022-11-09 13:55:08,038:INFO:Checking environment
+2022-11-09 13:55:08,038:INFO:python_version: 3.10.5
+2022-11-09 13:55:08,039:INFO:python_build: ('tags/v3.10.5:f377153', 'Jun  6 2022 16:14:13')
+2022-11-09 13:55:08,039:INFO:machine: AMD64
+2022-11-09 13:55:08,039:INFO:platform: Windows-10-10.0.22000-SP0
+2022-11-09 13:55:08,042:INFO:Memory: svmem(total=34081136640, available=18589548544, percent=45.5, used=15491588096, free=18589548544)
+2022-11-09 13:55:08,042:INFO:Physical Core: 6
+2022-11-09 13:55:08,042:INFO:Logical Core: 12
+2022-11-09 13:55:08,042:INFO:Checking libraries
+2022-11-09 13:55:08,042:INFO:System:
+2022-11-09 13:55:08,042:INFO:    python: 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)]
+2022-11-09 13:55:08,043:INFO:executable: c:\Python310\python.exe
+2022-11-09 13:55:08,043:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-11-09 13:55:08,043:INFO:PyCaret required dependencies:
+2022-11-09 13:55:08,043:INFO:                 pip: 22.0.4
+2022-11-09 13:55:08,043:INFO:          setuptools: 58.1.0
+2022-11-09 13:55:08,043:INFO:             pycaret: 3.0.0rc4
+2022-11-09 13:55:08,043:INFO:             IPython: 8.6.0
+2022-11-09 13:55:08,043:INFO:          ipywidgets: 8.0.2
+2022-11-09 13:55:08,043:INFO:                tqdm: 4.64.0
+2022-11-09 13:55:08,043:INFO:               numpy: 1.21.6
+2022-11-09 13:55:08,043:INFO:              pandas: 1.5.0
+2022-11-09 13:55:08,043:INFO:              jinja2: 3.1.2
+2022-11-09 13:55:08,043:INFO:               scipy: 1.7.3
+2022-11-09 13:55:08,043:INFO:              joblib: 1.2.0
+2022-11-09 13:55:08,043:INFO:             sklearn: 1.1.2
+2022-11-09 13:55:08,043:INFO:                pyod: 1.0.6
+2022-11-09 13:55:08,043:INFO:            imblearn: 0.9.1
+2022-11-09 13:55:08,044:INFO:   category_encoders: 2.5.1.post0
+2022-11-09 13:55:08,044:INFO:            lightgbm: 3.3.2
+2022-11-09 13:55:08,044:INFO:               numba: 0.56.2
+2022-11-09 13:55:08,044:INFO:            requests: 2.28.1
+2022-11-09 13:55:08,044:INFO:          matplotlib: 3.6.0
+2022-11-09 13:55:08,044:INFO:          scikitplot: 0.3.7
+2022-11-09 13:55:08,044:INFO:         yellowbrick: 1.5
+2022-11-09 13:55:08,044:INFO:              plotly: 5.11.0
+2022-11-09 13:55:08,044:INFO:             kaleido: 0.2.1
+2022-11-09 13:55:08,044:INFO:         statsmodels: 0.13.2
+2022-11-09 13:55:08,044:INFO:              sktime: 0.13.4
+2022-11-09 13:55:08,044:INFO:               tbats: 1.1.1
+2022-11-09 13:55:08,044:INFO:            pmdarima: 1.8.5
+2022-11-09 13:55:08,044:INFO:              psutil: 5.9.4
+2022-11-09 13:55:08,044:INFO:PyCaret optional dependencies:
+2022-11-09 13:55:21,081:INFO:                shap: Not installed
+2022-11-09 13:55:21,081:INFO:           interpret: Not installed
+2022-11-09 13:55:21,081:INFO:                umap: Not installed
+2022-11-09 13:55:21,081:INFO:    pandas_profiling: Not installed
+2022-11-09 13:55:21,081:INFO:  explainerdashboard: Not installed
+2022-11-09 13:55:21,081:INFO:             autoviz: Not installed
+2022-11-09 13:55:21,081:INFO:           fairlearn: Not installed
+2022-11-09 13:55:21,081:INFO:             xgboost: 1.7.1
+2022-11-09 13:55:21,081:INFO:            catboost: Not installed
+2022-11-09 13:55:21,081:INFO:              kmodes: Not installed
+2022-11-09 13:55:21,082:INFO:             mlxtend: Not installed
+2022-11-09 13:55:21,082:INFO:       statsforecast: Not installed
+2022-11-09 13:55:21,082:INFO:        tune_sklearn: Not installed
+2022-11-09 13:55:21,082:INFO:                 ray: Not installed
+2022-11-09 13:55:21,082:INFO:            hyperopt: Not installed
+2022-11-09 13:55:21,082:INFO:              optuna: Not installed
+2022-11-09 13:55:21,082:INFO:               skopt: Not installed
+2022-11-09 13:55:21,082:INFO:              mlflow: Not installed
+2022-11-09 13:55:21,082:INFO:              gradio: Not installed
+2022-11-09 13:55:21,082:INFO:             fastapi: 0.80.0
+2022-11-09 13:55:21,082:INFO:             uvicorn: 0.18.3
+2022-11-09 13:55:21,082:INFO:              m2cgen: Not installed
+2022-11-09 13:55:21,082:INFO:           evidently: Not installed
+2022-11-09 13:55:21,082:INFO:                nltk: Not installed
+2022-11-09 13:55:21,082:INFO:            pyLDAvis: Not installed
+2022-11-09 13:55:21,082:INFO:              gensim: Not installed
+2022-11-09 13:55:21,082:INFO:               spacy: Not installed
+2022-11-09 13:55:21,082:INFO:           wordcloud: Not installed
+2022-11-09 13:55:21,082:INFO:            textblob: Not installed
+2022-11-09 13:55:21,082:INFO:               fugue: Not installed
+2022-11-09 13:55:21,083:INFO:           streamlit: Not installed
+2022-11-09 13:55:21,083:INFO:             prophet: Not installed
+2022-11-09 13:55:21,083:INFO:None
+2022-11-09 13:55:21,083:INFO:Set up data.
+2022-11-09 13:55:21,101:INFO:Set up train/test split.
+2022-11-09 13:55:21,105:INFO:Set up index.
+2022-11-09 13:55:21,105:INFO:Set up folding strategy.
+2022-11-09 13:55:21,105:INFO:Assigning column types.
+2022-11-09 13:55:21,108:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-11-09 13:55:21,108:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2022-11-09 13:55:21,115:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2022-11-09 13:55:21,120:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2022-11-09 13:55:21,175:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-11-09 13:55:21,219:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-11-09 13:55:21,220:INFO:Soft dependency imported: xgboost: 1.7.1
+2022-11-09 13:56:12,685:INFO:PyCaret RegressionExperiment
+2022-11-09 13:56:12,686:INFO:Logging name: reg-default-name
+2022-11-09 13:56:12,686:INFO:ML Usecase: MLUsecase.REGRESSION
+2022-11-09 13:56:12,686:INFO:version 3.0.0.rc4
+2022-11-09 13:56:12,686:INFO:Initializing setup()
+2022-11-09 13:56:12,686:INFO:self.USI: 2120
+2022-11-09 13:56:12,686:INFO:self.variable_keys: {'exp_id', 'logging_param', 'gpu_param', 'log_plots_param', 'transform_target_method_param', 'y_test', 'memory', 'fold_shuffle_param', 'X_test', '_gpu_n_jobs_param', '_ml_usecase', 'X', 'seed', '_available_plots', 'fold_generator', '_all_models_internal', 'display_container', 'variable_keys', 'idx', 'exp_name_log', 'X_train', '_all_models', 'y', 'html_param', '_all_metrics', 'fold_groups_param', 'master_model_container', 'pipeline', 'target_param', 'y_train', 'transform_target_param', 'data', 'USI', 'n_jobs_param'}
+2022-11-09 13:56:12,686:INFO:Checking environment
+2022-11-09 13:56:12,686:INFO:python_version: 3.10.5
+2022-11-09 13:56:12,686:INFO:python_build: ('tags/v3.10.5:f377153', 'Jun  6 2022 16:14:13')
+2022-11-09 13:56:12,686:INFO:machine: AMD64
+2022-11-09 13:56:12,686:INFO:platform: Windows-10-10.0.22000-SP0
+2022-11-09 13:56:12,690:INFO:Memory: svmem(total=34081136640, available=18572500992, percent=45.5, used=15508635648, free=18572500992)
+2022-11-09 13:56:12,690:INFO:Physical Core: 6
+2022-11-09 13:56:12,691:INFO:Logical Core: 12
+2022-11-09 13:56:12,691:INFO:Checking libraries
+2022-11-09 13:56:12,691:INFO:System:
+2022-11-09 13:56:12,691:INFO:    python: 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)]
+2022-11-09 13:56:12,691:INFO:executable: c:\Python310\python.exe
+2022-11-09 13:56:12,691:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-11-09 13:56:12,691:INFO:PyCaret required dependencies:
+2022-11-09 13:56:12,691:INFO:                 pip: 22.0.4
+2022-11-09 13:56:12,691:INFO:          setuptools: 58.1.0
+2022-11-09 13:56:12,691:INFO:             pycaret: 3.0.0rc4
+2022-11-09 13:56:12,691:INFO:             IPython: 8.6.0
+2022-11-09 13:56:12,691:INFO:          ipywidgets: 8.0.2
+2022-11-09 13:56:12,691:INFO:                tqdm: 4.64.0
+2022-11-09 13:56:12,691:INFO:               numpy: 1.21.6
+2022-11-09 13:56:12,691:INFO:              pandas: 1.5.0
+2022-11-09 13:56:12,691:INFO:              jinja2: 3.1.2
+2022-11-09 13:56:12,691:INFO:               scipy: 1.7.3
+2022-11-09 13:56:12,692:INFO:              joblib: 1.2.0
+2022-11-09 13:56:12,692:INFO:             sklearn: 1.1.2
+2022-11-09 13:56:12,692:INFO:                pyod: 1.0.6
+2022-11-09 13:56:12,692:INFO:            imblearn: 0.9.1
+2022-11-09 13:56:12,692:INFO:   category_encoders: 2.5.1.post0
+2022-11-09 13:56:12,692:INFO:            lightgbm: 3.3.2
+2022-11-09 13:56:12,692:INFO:               numba: 0.56.2
+2022-11-09 13:56:12,692:INFO:            requests: 2.28.1
+2022-11-09 13:56:12,692:INFO:          matplotlib: 3.6.0
+2022-11-09 13:56:12,692:INFO:          scikitplot: 0.3.7
+2022-11-09 13:56:12,692:INFO:         yellowbrick: 1.5
+2022-11-09 13:56:12,692:INFO:              plotly: 5.11.0
+2022-11-09 13:56:12,692:INFO:             kaleido: 0.2.1
+2022-11-09 13:56:12,692:INFO:         statsmodels: 0.13.2
+2022-11-09 13:56:12,692:INFO:              sktime: 0.13.4
+2022-11-09 13:56:12,692:INFO:               tbats: 1.1.1
+2022-11-09 13:56:12,692:INFO:            pmdarima: 1.8.5
+2022-11-09 13:56:12,692:INFO:              psutil: 5.9.4
+2022-11-09 13:56:12,693:INFO:PyCaret optional dependencies:
+2022-11-09 13:56:12,693:INFO:                shap: Not installed
+2022-11-09 13:56:12,693:INFO:           interpret: Not installed
+2022-11-09 13:56:12,693:INFO:                umap: Not installed
+2022-11-09 13:56:12,693:INFO:    pandas_profiling: Not installed
+2022-11-09 13:56:12,693:INFO:  explainerdashboard: Not installed
+2022-11-09 13:56:12,693:INFO:             autoviz: Not installed
+2022-11-09 13:56:12,693:INFO:           fairlearn: Not installed
+2022-11-09 13:56:12,693:INFO:             xgboost: 1.7.1
+2022-11-09 13:56:12,693:INFO:            catboost: Not installed
+2022-11-09 13:56:12,693:INFO:              kmodes: Not installed
+2022-11-09 13:56:12,693:INFO:             mlxtend: Not installed
+2022-11-09 13:56:12,693:INFO:       statsforecast: Not installed
+2022-11-09 13:56:12,693:INFO:        tune_sklearn: Not installed
+2022-11-09 13:56:12,693:INFO:                 ray: Not installed
+2022-11-09 13:56:12,693:INFO:            hyperopt: Not installed
+2022-11-09 13:56:12,694:INFO:              optuna: Not installed
+2022-11-09 13:56:12,694:INFO:               skopt: Not installed
+2022-11-09 13:56:12,694:INFO:              mlflow: Not installed
+2022-11-09 13:56:12,694:INFO:              gradio: Not installed
+2022-11-09 13:56:12,694:INFO:             fastapi: 0.80.0
+2022-11-09 13:56:12,694:INFO:             uvicorn: 0.18.3
+2022-11-09 13:56:12,694:INFO:              m2cgen: Not installed
+2022-11-09 13:56:12,694:INFO:           evidently: Not installed
+2022-11-09 13:56:12,694:INFO:                nltk: Not installed
+2022-11-09 13:56:12,694:INFO:            pyLDAvis: Not installed
+2022-11-09 13:56:12,694:INFO:              gensim: Not installed
+2022-11-09 13:56:12,694:INFO:               spacy: Not installed
+2022-11-09 13:56:12,694:INFO:           wordcloud: Not installed
+2022-11-09 13:56:12,694:INFO:            textblob: Not installed
+2022-11-09 13:56:12,694:INFO:               fugue: Not installed
+2022-11-09 13:56:12,694:INFO:           streamlit: Not installed
+2022-11-09 13:56:12,695:INFO:             prophet: Not installed
+2022-11-09 13:56:12,695:INFO:None
+2022-11-09 13:56:12,695:INFO:Set up data.
+2022-11-09 13:56:12,714:INFO:Set up train/test split.
+2022-11-09 13:56:12,723:INFO:Set up index.
+2022-11-09 13:56:12,724:INFO:Set up folding strategy.
+2022-11-09 13:56:12,724:INFO:Assigning column types.
+2022-11-09 13:56:12,728:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-11-09 13:56:12,729:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2022-11-09 13:56:12,733:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2022-11-09 13:56:12,739:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2022-11-09 13:56:12,804:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-11-09 13:56:12,857:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-11-09 13:56:12,858:INFO:Soft dependency imported: xgboost: 1.7.1
+2022-11-09 14:33:01,906:INFO:PyCaret RegressionExperiment
+2022-11-09 14:33:01,906:INFO:Logging name: reg-default-name
+2022-11-09 14:33:01,906:INFO:ML Usecase: MLUsecase.REGRESSION
+2022-11-09 14:33:01,906:INFO:version 3.0.0.rc4
+2022-11-09 14:33:01,906:INFO:Initializing setup()
+2022-11-09 14:33:01,906:INFO:self.USI: 2ea0
+2022-11-09 14:33:01,906:INFO:self.variable_keys: {'exp_id', 'logging_param', 'gpu_param', 'log_plots_param', 'transform_target_method_param', 'y_test', 'memory', 'fold_shuffle_param', 'X_test', '_gpu_n_jobs_param', '_ml_usecase', 'X', 'seed', '_available_plots', 'fold_generator', '_all_models_internal', 'display_container', 'variable_keys', 'idx', 'exp_name_log', 'X_train', '_all_models', 'y', 'html_param', '_all_metrics', 'fold_groups_param', 'master_model_container', 'pipeline', 'target_param', 'y_train', 'transform_target_param', 'data', 'USI', 'n_jobs_param'}
+2022-11-09 14:33:01,906:INFO:Checking environment
+2022-11-09 14:33:01,906:INFO:python_version: 3.10.5
+2022-11-09 14:33:01,906:INFO:python_build: ('tags/v3.10.5:f377153', 'Jun  6 2022 16:14:13')
+2022-11-09 14:33:01,906:INFO:machine: AMD64
+2022-11-09 14:33:01,906:INFO:platform: Windows-10-10.0.22000-SP0
+2022-11-09 14:33:01,910:INFO:Memory: svmem(total=34081136640, available=17502146560, percent=48.6, used=16578990080, free=17502146560)
+2022-11-09 14:33:01,911:INFO:Physical Core: 6
+2022-11-09 14:33:01,911:INFO:Logical Core: 12
+2022-11-09 14:33:01,911:INFO:Checking libraries
+2022-11-09 14:33:01,911:INFO:System:
+2022-11-09 14:33:01,911:INFO:    python: 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)]
+2022-11-09 14:33:01,911:INFO:executable: c:\Python310\python.exe
+2022-11-09 14:33:01,911:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-11-09 14:33:01,911:INFO:PyCaret required dependencies:
+2022-11-09 14:33:01,911:INFO:                 pip: 22.0.4
+2022-11-09 14:33:01,911:INFO:          setuptools: 58.1.0
+2022-11-09 14:33:01,911:INFO:             pycaret: 3.0.0rc4
+2022-11-09 14:33:01,911:INFO:             IPython: 8.6.0
+2022-11-09 14:33:01,911:INFO:          ipywidgets: 8.0.2
+2022-11-09 14:33:01,911:INFO:                tqdm: 4.64.0
+2022-11-09 14:33:01,911:INFO:               numpy: 1.21.6
+2022-11-09 14:33:01,911:INFO:              pandas: 1.5.0
+2022-11-09 14:33:01,911:INFO:              jinja2: 3.1.2
+2022-11-09 14:33:01,912:INFO:               scipy: 1.7.3
+2022-11-09 14:33:01,912:INFO:              joblib: 1.2.0
+2022-11-09 14:33:01,912:INFO:             sklearn: 1.1.2
+2022-11-09 14:33:01,912:INFO:                pyod: 1.0.6
+2022-11-09 14:33:01,912:INFO:            imblearn: 0.9.1
+2022-11-09 14:33:01,912:INFO:   category_encoders: 2.5.1.post0
+2022-11-09 14:33:01,912:INFO:            lightgbm: 3.3.2
+2022-11-09 14:33:01,912:INFO:               numba: 0.56.2
+2022-11-09 14:33:01,912:INFO:            requests: 2.28.1
+2022-11-09 14:33:01,912:INFO:          matplotlib: 3.6.0
+2022-11-09 14:33:01,912:INFO:          scikitplot: 0.3.7
+2022-11-09 14:33:01,912:INFO:         yellowbrick: 1.5
+2022-11-09 14:33:01,912:INFO:              plotly: 5.11.0
+2022-11-09 14:33:01,912:INFO:             kaleido: 0.2.1
+2022-11-09 14:33:01,912:INFO:         statsmodels: 0.13.2
+2022-11-09 14:33:01,912:INFO:              sktime: 0.13.4
+2022-11-09 14:33:01,912:INFO:               tbats: 1.1.1
+2022-11-09 14:33:01,912:INFO:            pmdarima: 1.8.5
+2022-11-09 14:33:01,912:INFO:              psutil: 5.9.4
+2022-11-09 14:33:01,913:INFO:PyCaret optional dependencies:
+2022-11-09 14:33:01,913:INFO:                shap: Not installed
+2022-11-09 14:33:01,913:INFO:           interpret: Not installed
+2022-11-09 14:33:01,913:INFO:                umap: Not installed
+2022-11-09 14:33:01,913:INFO:    pandas_profiling: Not installed
+2022-11-09 14:33:01,913:INFO:  explainerdashboard: Not installed
+2022-11-09 14:33:01,913:INFO:             autoviz: Not installed
+2022-11-09 14:33:01,913:INFO:           fairlearn: Not installed
+2022-11-09 14:33:01,913:INFO:             xgboost: 1.7.1
+2022-11-09 14:33:01,913:INFO:            catboost: Not installed
+2022-11-09 14:33:01,913:INFO:              kmodes: Not installed
+2022-11-09 14:33:01,913:INFO:             mlxtend: Not installed
+2022-11-09 14:33:01,913:INFO:       statsforecast: Not installed
+2022-11-09 14:33:01,913:INFO:        tune_sklearn: Not installed
+2022-11-09 14:33:01,913:INFO:                 ray: Not installed
+2022-11-09 14:33:01,914:INFO:            hyperopt: Not installed
+2022-11-09 14:33:01,914:INFO:              optuna: Not installed
+2022-11-09 14:33:01,914:INFO:               skopt: Not installed
+2022-11-09 14:33:01,914:INFO:              mlflow: Not installed
+2022-11-09 14:33:01,914:INFO:              gradio: Not installed
+2022-11-09 14:33:01,914:INFO:             fastapi: 0.80.0
+2022-11-09 14:33:01,914:INFO:             uvicorn: 0.18.3
+2022-11-09 14:33:01,914:INFO:              m2cgen: Not installed
+2022-11-09 14:33:01,914:INFO:           evidently: Not installed
+2022-11-09 14:33:01,914:INFO:                nltk: Not installed
+2022-11-09 14:33:01,914:INFO:            pyLDAvis: Not installed
+2022-11-09 14:33:01,914:INFO:              gensim: Not installed
+2022-11-09 14:33:01,914:INFO:               spacy: Not installed
+2022-11-09 14:33:01,914:INFO:           wordcloud: Not installed
+2022-11-09 14:33:01,914:INFO:            textblob: Not installed
+2022-11-09 14:33:01,914:INFO:               fugue: Not installed
+2022-11-09 14:33:01,914:INFO:           streamlit: Not installed
+2022-11-09 14:33:01,914:INFO:             prophet: Not installed
+2022-11-09 14:33:01,914:INFO:None
+2022-11-09 14:33:01,915:INFO:Set up data.
+2022-11-09 14:33:01,944:INFO:Set up train/test split.
+2022-11-09 14:33:01,950:INFO:Set up index.
+2022-11-09 14:33:01,951:INFO:Set up folding strategy.
+2022-11-09 14:33:01,951:INFO:Assigning column types.
+2022-11-09 14:33:01,955:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-11-09 14:33:01,955:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2022-11-09 14:33:01,960:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2022-11-09 14:33:01,965:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2022-11-09 14:33:02,024:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-11-09 14:33:02,063:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-11-09 14:33:02,063:INFO:Soft dependency imported: xgboost: 1.7.1
+2022-11-09 14:33:03,060:INFO:PyCaret RegressionExperiment
+2022-11-09 14:33:03,060:INFO:Logging name: reg-default-name
+2022-11-09 14:33:03,060:INFO:ML Usecase: MLUsecase.REGRESSION
+2022-11-09 14:33:03,060:INFO:version 3.0.0.rc4
+2022-11-09 14:33:03,060:INFO:Initializing setup()
+2022-11-09 14:33:03,060:INFO:self.USI: 81a2
+2022-11-09 14:33:03,060:INFO:self.variable_keys: {'exp_id', 'logging_param', 'gpu_param', 'log_plots_param', 'transform_target_method_param', 'y_test', 'memory', 'fold_shuffle_param', 'X_test', '_gpu_n_jobs_param', '_ml_usecase', 'X', 'seed', '_available_plots', 'fold_generator', '_all_models_internal', 'display_container', 'variable_keys', 'idx', 'exp_name_log', 'X_train', '_all_models', 'y', 'html_param', '_all_metrics', 'fold_groups_param', 'master_model_container', 'pipeline', 'target_param', 'y_train', 'transform_target_param', 'data', 'USI', 'n_jobs_param'}
+2022-11-09 14:33:03,061:INFO:Checking environment
+2022-11-09 14:33:03,061:INFO:python_version: 3.10.5
+2022-11-09 14:33:03,061:INFO:python_build: ('tags/v3.10.5:f377153', 'Jun  6 2022 16:14:13')
+2022-11-09 14:33:03,061:INFO:machine: AMD64
+2022-11-09 14:33:03,061:INFO:platform: Windows-10-10.0.22000-SP0
+2022-11-09 14:33:03,065:INFO:Memory: svmem(total=34081136640, available=17498091520, percent=48.7, used=16583045120, free=17498091520)
+2022-11-09 14:33:03,065:INFO:Physical Core: 6
+2022-11-09 14:33:03,065:INFO:Logical Core: 12
+2022-11-09 14:33:03,066:INFO:Checking libraries
+2022-11-09 14:33:03,066:INFO:System:
+2022-11-09 14:33:03,066:INFO:    python: 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)]
+2022-11-09 14:33:03,066:INFO:executable: c:\Python310\python.exe
+2022-11-09 14:33:03,066:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-11-09 14:33:03,066:INFO:PyCaret required dependencies:
+2022-11-09 14:33:03,066:INFO:                 pip: 22.0.4
+2022-11-09 14:33:03,066:INFO:          setuptools: 58.1.0
+2022-11-09 14:33:03,066:INFO:             pycaret: 3.0.0rc4
+2022-11-09 14:33:03,066:INFO:             IPython: 8.6.0
+2022-11-09 14:33:03,066:INFO:          ipywidgets: 8.0.2
+2022-11-09 14:33:03,066:INFO:                tqdm: 4.64.0
+2022-11-09 14:33:03,067:INFO:               numpy: 1.21.6
+2022-11-09 14:33:03,067:INFO:              pandas: 1.5.0
+2022-11-09 14:33:03,067:INFO:              jinja2: 3.1.2
+2022-11-09 14:33:03,067:INFO:               scipy: 1.7.3
+2022-11-09 14:33:03,067:INFO:              joblib: 1.2.0
+2022-11-09 14:33:03,067:INFO:             sklearn: 1.1.2
+2022-11-09 14:33:03,067:INFO:                pyod: 1.0.6
+2022-11-09 14:33:03,067:INFO:            imblearn: 0.9.1
+2022-11-09 14:33:03,067:INFO:   category_encoders: 2.5.1.post0
+2022-11-09 14:33:03,067:INFO:            lightgbm: 3.3.2
+2022-11-09 14:33:03,067:INFO:               numba: 0.56.2
+2022-11-09 14:33:03,067:INFO:            requests: 2.28.1
+2022-11-09 14:33:03,067:INFO:          matplotlib: 3.6.0
+2022-11-09 14:33:03,067:INFO:          scikitplot: 0.3.7
+2022-11-09 14:33:03,067:INFO:         yellowbrick: 1.5
+2022-11-09 14:33:03,067:INFO:              plotly: 5.11.0
+2022-11-09 14:33:03,067:INFO:             kaleido: 0.2.1
+2022-11-09 14:33:03,067:INFO:         statsmodels: 0.13.2
+2022-11-09 14:33:03,067:INFO:              sktime: 0.13.4
+2022-11-09 14:33:03,068:INFO:               tbats: 1.1.1
+2022-11-09 14:33:03,068:INFO:            pmdarima: 1.8.5
+2022-11-09 14:33:03,068:INFO:              psutil: 5.9.4
+2022-11-09 14:33:03,068:INFO:PyCaret optional dependencies:
+2022-11-09 14:33:03,068:INFO:                shap: Not installed
+2022-11-09 14:33:03,068:INFO:           interpret: Not installed
+2022-11-09 14:33:03,068:INFO:                umap: Not installed
+2022-11-09 14:33:03,068:INFO:    pandas_profiling: Not installed
+2022-11-09 14:33:03,068:INFO:  explainerdashboard: Not installed
+2022-11-09 14:33:03,068:INFO:             autoviz: Not installed
+2022-11-09 14:33:03,068:INFO:           fairlearn: Not installed
+2022-11-09 14:33:03,068:INFO:             xgboost: 1.7.1
+2022-11-09 14:33:03,068:INFO:            catboost: Not installed
+2022-11-09 14:33:03,068:INFO:              kmodes: Not installed
+2022-11-09 14:33:03,068:INFO:             mlxtend: Not installed
+2022-11-09 14:33:03,068:INFO:       statsforecast: Not installed
+2022-11-09 14:33:03,069:INFO:        tune_sklearn: Not installed
+2022-11-09 14:33:03,069:INFO:                 ray: Not installed
+2022-11-09 14:33:03,069:INFO:            hyperopt: Not installed
+2022-11-09 14:33:03,069:INFO:              optuna: Not installed
+2022-11-09 14:33:03,069:INFO:               skopt: Not installed
+2022-11-09 14:33:03,069:INFO:              mlflow: Not installed
+2022-11-09 14:33:03,069:INFO:              gradio: Not installed
+2022-11-09 14:33:03,069:INFO:             fastapi: 0.80.0
+2022-11-09 14:33:03,069:INFO:             uvicorn: 0.18.3
+2022-11-09 14:33:03,069:INFO:              m2cgen: Not installed
+2022-11-09 14:33:03,069:INFO:           evidently: Not installed
+2022-11-09 14:33:03,069:INFO:                nltk: Not installed
+2022-11-09 14:33:03,069:INFO:            pyLDAvis: Not installed
+2022-11-09 14:33:03,069:INFO:              gensim: Not installed
+2022-11-09 14:33:03,069:INFO:               spacy: Not installed
+2022-11-09 14:33:03,069:INFO:           wordcloud: Not installed
+2022-11-09 14:33:03,069:INFO:            textblob: Not installed
+2022-11-09 14:33:03,069:INFO:               fugue: Not installed
+2022-11-09 14:33:03,069:INFO:           streamlit: Not installed
+2022-11-09 14:33:03,070:INFO:             prophet: Not installed
+2022-11-09 14:33:03,070:INFO:None
+2022-11-09 14:33:03,070:INFO:Set up data.
+2022-11-09 14:33:03,094:INFO:Set up train/test split.
+2022-11-09 14:33:03,097:INFO:Set up index.
+2022-11-09 14:33:03,098:INFO:Set up folding strategy.
+2022-11-09 14:33:03,098:INFO:Assigning column types.
+2022-11-09 14:33:03,102:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-11-09 14:33:03,102:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2022-11-09 14:33:03,108:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2022-11-09 14:33:03,113:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2022-11-09 14:33:03,172:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-11-09 14:33:03,212:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-11-09 14:33:03,212:INFO:Soft dependency imported: xgboost: 1.7.1
+2022-11-09 14:33:04,648:INFO:PyCaret RegressionExperiment
+2022-11-09 14:33:04,648:INFO:Logging name: reg-default-name
+2022-11-09 14:33:04,648:INFO:ML Usecase: MLUsecase.REGRESSION
+2022-11-09 14:33:04,649:INFO:version 3.0.0.rc4
+2022-11-09 14:33:04,649:INFO:Initializing setup()
+2022-11-09 14:33:04,649:INFO:self.USI: 7e04
+2022-11-09 14:33:04,649:INFO:self.variable_keys: {'exp_id', 'logging_param', 'gpu_param', 'log_plots_param', 'transform_target_method_param', 'y_test', 'memory', 'fold_shuffle_param', 'X_test', '_gpu_n_jobs_param', '_ml_usecase', 'X', 'seed', '_available_plots', 'fold_generator', '_all_models_internal', 'display_container', 'variable_keys', 'idx', 'exp_name_log', 'X_train', '_all_models', 'y', 'html_param', '_all_metrics', 'fold_groups_param', 'master_model_container', 'pipeline', 'target_param', 'y_train', 'transform_target_param', 'data', 'USI', 'n_jobs_param'}
+2022-11-09 14:33:04,649:INFO:Checking environment
+2022-11-09 14:33:04,649:INFO:python_version: 3.10.5
+2022-11-09 14:33:04,649:INFO:python_build: ('tags/v3.10.5:f377153', 'Jun  6 2022 16:14:13')
+2022-11-09 14:33:04,649:INFO:machine: AMD64
+2022-11-09 14:33:04,649:INFO:platform: Windows-10-10.0.22000-SP0
+2022-11-09 14:33:04,655:INFO:Memory: svmem(total=34081136640, available=17485647872, percent=48.7, used=16595488768, free=17485647872)
+2022-11-09 14:33:04,655:INFO:Physical Core: 6
+2022-11-09 14:33:04,655:INFO:Logical Core: 12
+2022-11-09 14:33:04,655:INFO:Checking libraries
+2022-11-09 14:33:04,655:INFO:System:
+2022-11-09 14:33:04,655:INFO:    python: 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)]
+2022-11-09 14:33:04,655:INFO:executable: c:\Python310\python.exe
+2022-11-09 14:33:04,656:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-11-09 14:33:04,656:INFO:PyCaret required dependencies:
+2022-11-09 14:33:04,656:INFO:                 pip: 22.0.4
+2022-11-09 14:33:04,656:INFO:          setuptools: 58.1.0
+2022-11-09 14:33:04,656:INFO:             pycaret: 3.0.0rc4
+2022-11-09 14:33:04,656:INFO:             IPython: 8.6.0
+2022-11-09 14:33:04,656:INFO:          ipywidgets: 8.0.2
+2022-11-09 14:33:04,656:INFO:                tqdm: 4.64.0
+2022-11-09 14:33:04,656:INFO:               numpy: 1.21.6
+2022-11-09 14:33:04,656:INFO:              pandas: 1.5.0
+2022-11-09 14:33:04,656:INFO:              jinja2: 3.1.2
+2022-11-09 14:33:04,656:INFO:               scipy: 1.7.3
+2022-11-09 14:33:04,656:INFO:              joblib: 1.2.0
+2022-11-09 14:33:04,656:INFO:             sklearn: 1.1.2
+2022-11-09 14:33:04,656:INFO:                pyod: 1.0.6
+2022-11-09 14:33:04,656:INFO:            imblearn: 0.9.1
+2022-11-09 14:33:04,656:INFO:   category_encoders: 2.5.1.post0
+2022-11-09 14:33:04,656:INFO:            lightgbm: 3.3.2
+2022-11-09 14:33:04,657:INFO:               numba: 0.56.2
+2022-11-09 14:33:04,657:INFO:            requests: 2.28.1
+2022-11-09 14:33:04,657:INFO:          matplotlib: 3.6.0
+2022-11-09 14:33:04,657:INFO:          scikitplot: 0.3.7
+2022-11-09 14:33:04,657:INFO:         yellowbrick: 1.5
+2022-11-09 14:33:04,657:INFO:              plotly: 5.11.0
+2022-11-09 14:33:04,657:INFO:             kaleido: 0.2.1
+2022-11-09 14:33:04,657:INFO:         statsmodels: 0.13.2
+2022-11-09 14:33:04,657:INFO:              sktime: 0.13.4
+2022-11-09 14:33:04,657:INFO:               tbats: 1.1.1
+2022-11-09 14:33:04,657:INFO:            pmdarima: 1.8.5
+2022-11-09 14:33:04,657:INFO:              psutil: 5.9.4
+2022-11-09 14:33:04,657:INFO:PyCaret optional dependencies:
+2022-11-09 14:33:04,657:INFO:                shap: Not installed
+2022-11-09 14:33:04,657:INFO:           interpret: Not installed
+2022-11-09 14:33:04,658:INFO:                umap: Not installed
+2022-11-09 14:33:04,658:INFO:    pandas_profiling: Not installed
+2022-11-09 14:33:04,658:INFO:  explainerdashboard: Not installed
+2022-11-09 14:33:04,658:INFO:             autoviz: Not installed
+2022-11-09 14:33:04,658:INFO:           fairlearn: Not installed
+2022-11-09 14:33:04,658:INFO:             xgboost: 1.7.1
+2022-11-09 14:33:04,658:INFO:            catboost: Not installed
+2022-11-09 14:33:04,658:INFO:              kmodes: Not installed
+2022-11-09 14:33:04,658:INFO:             mlxtend: Not installed
+2022-11-09 14:33:04,658:INFO:       statsforecast: Not installed
+2022-11-09 14:33:04,658:INFO:        tune_sklearn: Not installed
+2022-11-09 14:33:04,658:INFO:                 ray: Not installed
+2022-11-09 14:33:04,658:INFO:            hyperopt: Not installed
+2022-11-09 14:33:04,658:INFO:              optuna: Not installed
+2022-11-09 14:33:04,658:INFO:               skopt: Not installed
+2022-11-09 14:33:04,658:INFO:              mlflow: Not installed
+2022-11-09 14:33:04,658:INFO:              gradio: Not installed
+2022-11-09 14:33:04,658:INFO:             fastapi: 0.80.0
+2022-11-09 14:33:04,658:INFO:             uvicorn: 0.18.3
+2022-11-09 14:33:04,659:INFO:              m2cgen: Not installed
+2022-11-09 14:33:04,659:INFO:           evidently: Not installed
+2022-11-09 14:33:04,659:INFO:                nltk: Not installed
+2022-11-09 14:33:04,659:INFO:            pyLDAvis: Not installed
+2022-11-09 14:33:04,659:INFO:              gensim: Not installed
+2022-11-09 14:33:04,659:INFO:               spacy: Not installed
+2022-11-09 14:33:04,659:INFO:           wordcloud: Not installed
+2022-11-09 14:33:04,659:INFO:            textblob: Not installed
+2022-11-09 14:33:04,659:INFO:               fugue: Not installed
+2022-11-09 14:33:04,659:INFO:           streamlit: Not installed
+2022-11-09 14:33:04,659:INFO:             prophet: Not installed
+2022-11-09 14:33:04,659:INFO:None
+2022-11-09 14:33:04,659:INFO:Set up data.
+2022-11-09 14:33:04,681:INFO:Set up train/test split.
+2022-11-09 14:33:04,686:INFO:Set up index.
+2022-11-09 14:33:04,686:INFO:Set up folding strategy.
+2022-11-09 14:33:04,686:INFO:Assigning column types.
+2022-11-09 14:33:04,690:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2022-11-09 14:33:04,690:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2022-11-09 14:33:04,696:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2022-11-09 14:33:04,702:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2022-11-09 14:33:04,761:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2022-11-09 14:33:04,804:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2022-11-09 14:33:04,805:INFO:Soft dependency imported: xgboost: 1.7.1
