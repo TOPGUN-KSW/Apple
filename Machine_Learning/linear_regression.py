@@ -35,7 +35,7 @@ import matplotlib.pyplot as plt #Ridge alpha값 찾기
 train_score = [] 
 test_score = []
 
-alpha_list = [0.001, 0.01, 0.1, 1, 10, 100, 1000]
+alpha_list = [0.01, 0.05, 0.1, 0.5, 1, 10]
 for alpha in alpha_list:
   full_ridge = Ridge(alpha=alpha)
   full_ridge.fit(train_scaled, train_target)
