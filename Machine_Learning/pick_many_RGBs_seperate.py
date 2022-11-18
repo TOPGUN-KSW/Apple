@@ -3,9 +3,9 @@ import numpy as np
 import glob
 import pandas as pd
 import natsort
-images = natsort.natsorted(glob.glob('./Machine_Learning/new_rembg_apples/*.png')) #폴더에 있는 파일들 숫자 순서대로 불러오기
-text=open('./Machine_Learning/Apple_attribute6.txt', 'w')
-print("red, green, blue, H, S, V, r, rg, most_red, least_red, most_yellow", file=text) #특성
+images = natsort.natsorted(glob.glob('./Machine_Learning/new_rembg_apples/*-6.png')) #폴더에 있는 파일들 숫자 순서대로 불러오기
+text=open('./Machine_Learning/Apple_attribute-6.txt', 'w')
+print("red, green, blue, H, S, V, r, rg, most_red, least_red, most_yellow, 1_g_r, 1_rg_r, 1_gb_r, 1_rgb_r, 1_r_rg, 1_g_rg, 1_gb_rb, 1_rgb_rb, 1_r_rgb, 1_gb_rgb", file=text) #특성
 for fname in images:
   im = cv2.imread(fname)
   red_sum = 0
@@ -51,10 +51,21 @@ for fname in images:
   print(average_blue, file=text, end =', ')
   print(H, file=text, end =', ')
   print(S, file=text, end =', ')
-  print(V, file=text, end =', ')  
+  print(V, file=text, end =', ')
   print(r, file=text, end =', ')
-  print(rg, file=text, end =', ')  
+  print(rg, file=text, end =', ')
   print(most_red, file=text, end =', ')
   print(least_red, file=text, end =', ')
-  print(most_yellow, file=text)
+  print(most_yellow, file=text, end =', ')
+  print(average_green/average_red, file=text, end =', ')
+  print((average_red+average_green)/average_red, file=text, end =', ')
+  print((average_green+average_blue)/average_red, file=text, end =', ')  
+  print((average_red+average_green+average_blue)/average_red, file=text, end =', ')
+  print(average_red/(average_red+average_green), file=text, end =', ')  
+  print(average_green/(average_red+average_green), file=text, end =', ')  
+  print((average_green+average_blue)/(average_red+average_blue), file=text, end =', ')  
+  print((average_red+average_green+average_blue)/(average_red+average_blue), file=text, end =', ')  
+  print(average_red/(average_red+average_green+average_blue), file=text, end =', ')  
+  print((average_green+average_blue)/(average_red+average_green+average_blue), file=text)  
+  
 text.close

@@ -24,7 +24,7 @@ ss.fit(train_poly)
 train_scaled = ss.transform(train_poly)
 test_scaled = ss.transform(test_poly)
 
-ridge = Ridge(alpha = 0.1)
+ridge = Ridge(alpha = 10)
 ridge.fit(train_scaled, train_target)
 print(round(ridge.score(train_scaled, train_target), 4))
 print(round(ridge.score(test_scaled, test_target), 4))
@@ -35,7 +35,7 @@ import matplotlib.pyplot as plt #Ridge alpha값 찾기
 train_score = [] 
 test_score = []
 
-alpha_list = [0.01, 0.05, 0.1, 0.5, 1, 10]
+alpha_list = [0.1, 1, 10, 30, 50, 70, 100]
 for alpha in alpha_list:
   full_ridge = Ridge(alpha=alpha)
   full_ridge.fit(train_scaled, train_target)
@@ -46,6 +46,15 @@ plt.plot(np.log10(alpha_list), test_score)
 plt.xlabel('alpha')
 plt.ylabel('R^2')
 plt.show()
+
+test = pd.read_csv('./Machine_Learning/test.csv')
+test_input = test
+poly.fit(test_input)
+test_poly = poly.transform(test_input)
+ss.fit(test_poly)
+test_scaled = ss.transform(test_poly)
+
+print(ridge.predict(test_scaled))
 
 # from sklearn.linear_model import Lasso
 # full_lasso = Lasso(alpha = 0.1)
