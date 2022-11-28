@@ -14,4 +14,11 @@ ss = StandardScaler()
 ss.fit(test_poly)
 test_scaled = ss.transform(test_poly)
 
-print(model.predict(test_scaled))
+
+text=open('./Machine_Learning/sugarlevel.txt', 'w')
+for i in model.predict(test_scaled):
+    if i == model.predict(test_scaled)[len(model.predict(test_scaled))-1]:
+        print(i[0], file=text)
+    else:
+        print(i[0], file=text, end =', ')
+text.close()

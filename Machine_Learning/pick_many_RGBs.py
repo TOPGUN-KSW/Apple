@@ -73,4 +73,4 @@ for fname in images:
     print(least_red, file=text, end =', ')
     print(most_yellow, file=text, end =', ')
     print(count, file=text, end = ', ')
-text.close
+text.close()

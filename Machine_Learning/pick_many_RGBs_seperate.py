@@ -68,4 +68,4 @@ for fname in images:
   print(average_red/(average_red+average_green+average_blue), file=text, end =', ')  
   print((average_green+average_blue)/(average_red+average_green+average_blue), file=text)  
   
-text.close
+text.close()

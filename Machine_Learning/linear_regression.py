@@ -29,7 +29,16 @@ ridge.fit(train_scaled, train_target)
 print(round(ridge.score(train_scaled, train_target), 4))
 print(round(ridge.score(test_scaled, test_target), 4))
 # print(test_scaled[1])
-# print(ridge.predict(test_scaled))
+
+right = 0
+wrong = 0
+
+for i, j in ridge.predict(test_scaled), test_target:
+  if -1< i - j <1:
+    right += 1
+  else:
+    wrong += 1
+print(right/240)
 
 import matplotlib.pyplot as plt #Ridge alpha값 찾기
 train_score = [] 
