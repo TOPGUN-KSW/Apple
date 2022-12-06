@@ -32,6 +32,8 @@ There are two universal ways to measure sugar levels: The destructive sugar leve
     2. Predict apple sweetness(Brix level) from apple images taken by a smartphone.
 
 ## Environment Setting
+### Preprocessing
+    - YOLO V4
 ### Machine Learning
     - Python 3.8.2
     - scikit-learn
