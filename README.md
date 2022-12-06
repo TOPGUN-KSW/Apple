@@ -24,7 +24,7 @@ Farmers harvest apples without checking the sweetness level. They pick all apple
 There are two universal ways to measure sugar levels: The destructive sugar levels measurement method (DM) and the Non-destructive sugar levels measurement method (NDM). DM measures sugar levels by testing the juice from cut fruits. It is a more affordable method than NDM. A disadvantage is that cut fruits lose their value to be sold. NDM displays sugar levels by detecting the reflected wavelength from the apples that were irradiated to near-infrared. It measures the sweetness of apples without damaging the fruits and shows the sugar levels immediately. However, the method is expensive, and the accuracy of the outputs is not stable. 
 
 ## Overview
-<img src="https://user-images.githubusercontent.com/74577775/205945438-5faaf282-02d7-4372-9d20-1ca4fb6f3356.png" width="700" height="500"></img>
+<img src="https://user-images.githubusercontent.com/74577775/205945438-5faaf282-02d7-4372-9d20-1ca4fb6f3356.png" width="900" height="400"></img>
 
 ## Research novelty
 
