@@ -33,6 +33,7 @@ There are two universal ways to measure sugar levels: The destructive sugar leve
     3. Detect multiple apples and provide appel sweetness(Brix level) of apples at once.
 
 ## How to run the project
+#### Download the Dataset folder from google Drive
 
 ### Machine Learning
 
@@ -41,7 +42,7 @@ There are two universal ways to measure sugar levels: The destructive sugar leve
 ### HML
 
 ### Android
-
+1. Run the Android application after running the server.
 
 
 
