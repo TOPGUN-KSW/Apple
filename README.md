@@ -38,7 +38,7 @@ There are two universal ways to measure sugar levels: The destructive sugar leve
 #### Download the Dataset folder from google Drive
 
 ### Machine Learning
-1. You can set the terminal path to apple/ and execute it.
+1. You can set the terminal path to '.../Machine_Learning/' and execute it.
 ### Deep Learning
 1. Insert the Final_3Class_Effiv2_l file into the decompressed Dataset folder.
 ### HML
