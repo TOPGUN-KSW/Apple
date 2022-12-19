@@ -47,8 +47,73 @@ pip install joblib
 3. You can set the terminal path to '.../Machine_Learning/' and execute it.
 ### Deep Learning
 1. Insert the Final_3Class_Effiv2_l file into the decompressed Dataset folder.
-### HML
-
+### Flask Server
+1. Install the modules using pip install
+attrs                        22.1.0
+click                        8.1.3
+colorama                     0.4.6
+dill                         0.3.6
+fastapi                      0.80.0
+Flask                        2.2.2
+flatbuffers                  2.0
+fonttools                    4.29.0
+keras                        2.11.0
+Keras-Preprocessing          1.1.2
+natsort                      8.2.0
+networkx                     2.8.8
+numba                        0.56.4
+numpy                        1.21.6
+oauthlib                     3.2.0
+onnxruntime                  1.12.1
+opencv-python                4.5.5.62
+opencv-python-headless       4.6.0.66
+opt-einsum                   3.3.0
+packaging                    21.3
+pandas                       1.5.1
+Pillow                       9.2.0
+pip                          22.3.1
+protobuf                     3.19.4
+pyasn1                       0.4.8
+pyasn1-modules               0.2.8
+pydantic                     1.10.2
+PyMatting                    1.1.8
+pyparsing                    3.0.7
+pyreadline3                  3.4.1
+PySocks                      1.7.1
+python-dateutil              2.8.2
+python-multipart             0.0.5
+pytz                         2022.6
+PyWavelets                   1.4.1
+rembg                        2.0.25
+requests                     2.27.1
+requests-oauthlib            1.3.1
+rsa                          4.8
+scikit-image                 0.19.3
+scikit-learn                 1.1.3
+scipy                        1.7.3
+sympy                        1.11.1
+tdqm                         0.0.1
+tensorboard                  2.11.0
+tensorboard-data-server      0.6.1
+tensorboard-plugin-wit       1.8.1
+tensorflow                   2.11.0
+tensorflow-estimator         2.11.0
+tensorflow-gpu               2.7.0
+tensorflow-intel             2.11.0
+tensorflow-io-gcs-filesystem 0.23.1
+torch                        1.13.1
+torchaudio                   0.13.1
+torchvision                  0.14.1
+watchdog                     2.1.9
+Werkzeug                     2.2.2
+2. Download all the files from the Github directory written below
+KSW_2022_Fall_Program/TopGun/code/Flask/
+3. Then name the folder to 'Flask'
+4. Download all the files from the Shared Google Drive directory written below
+Shared with me/Dataset/models
+5. Then, place the downloaded files from Shared Google Drive into the Flask folder
+6. Run CMD and type in the command below to run the Flask server
+python server.py
 ### Android
 1. Run the Android application after running the server.
 
