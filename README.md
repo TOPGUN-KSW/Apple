@@ -106,14 +106,15 @@ torchaudio                   0.13.1
 torchvision                  0.14.1
 watchdog                     2.1.9
 Werkzeug                     2.2.2
-2. Download all the files from the Github directory written below
-KSW_2022_Fall_Program/TopGun/code/Flask/
+2. Download all the files from the Github directory
+->KSW_2022_Fall_Program/TopGun/code/Flask/
 3. Then name the folder to 'Flask'
-4. Download all the files from the Shared Google Drive directory written below
-Shared with me/Dataset/models
+4. Download all the files from the Shared Google Drive directory
+->Shared with me/Dataset/Flask
 5. Then, place the downloaded files from Shared Google Drive into the Flask folder
-6. Run CMD and type in the command below to run the Flask server
-python server.py
+6. Run CMD and type in the command to run the Flask server
+->python server.py
+
 ### Android
 1. Run the Android application after running the server.
 
