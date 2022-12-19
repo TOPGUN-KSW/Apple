@@ -48,76 +48,77 @@ pip install joblib
 ### Deep Learning
 1. Insert the Final_3Class_Effiv2_l file into the decompressed Dataset folder.
 ### Flask Server
-1. Install the modules using pip install
-attrs                        22.1.0
-click                        8.1.3
-colorama                     0.4.6
-dill                         0.3.6
-fastapi                      0.80.0
-Flask                        2.2.2
-flatbuffers                  2.0
-fonttools                    4.29.0
-keras                        2.11.0
-Keras-Preprocessing          1.1.2
-natsort                      8.2.0
-networkx                     2.8.8
-numba                        0.56.4
-numpy                        1.21.6
-oauthlib                     3.2.0
-onnxruntime                  1.12.1
-opencv-python                4.5.5.62
-opencv-python-headless       4.6.0.66
-opt-einsum                   3.3.0
-packaging                    21.3
-pandas                       1.5.1
-Pillow                       9.2.0
-pip                          22.3.1
-protobuf                     3.19.4
-pyasn1                       0.4.8
-pyasn1-modules               0.2.8
-pydantic                     1.10.2
-PyMatting                    1.1.8
-pyparsing                    3.0.7
-pyreadline3                  3.4.1
-PySocks                      1.7.1
-python-dateutil              2.8.2
-python-multipart             0.0.5
-pytz                         2022.6
-PyWavelets                   1.4.1
-rembg                        2.0.25
-requests                     2.27.1
-requests-oauthlib            1.3.1
-rsa                          4.8
-scikit-image                 0.19.3
-scikit-learn                 1.1.3
-scipy                        1.7.3
-sympy                        1.11.1
-tdqm                         0.0.1
-tensorboard                  2.11.0
-tensorboard-data-server      0.6.1
-tensorboard-plugin-wit       1.8.1
-tensorflow                   2.11.0
-tensorflow-estimator         2.11.0
-tensorflow-gpu               2.7.0
-tensorflow-intel             2.11.0
-tensorflow-io-gcs-filesystem 0.23.1
-torch                        1.13.1
-torchaudio                   0.13.1
-torchvision                  0.14.1
-watchdog                     2.1.9
-Werkzeug                     2.2.2
+1. Install the modules using pip install<br>
+attrs                        22.1.0 <br>
+click                        8.1.3 <br>
+colorama                     0.4.6 <br>
+dill                         0.3.6 <br>
+fastapi                      0.80.0 <br>
+Flask                        2.2.2 <br>
+flatbuffers                  2.0 <br>
+fonttools                    4.29.0 <br>
+keras                        2.11.0 <br>
+Keras-Preprocessing          1.1.2 <br>
+natsort                      8.2.0<br>
+networkx                     2.8.8<br>
+numba                        0.56.4<br>
+numpy                        1.21.6<br>
+oauthlib                     3.2.0<br>
+onnxruntime                  1.12.1<br>
+opencv-python                4.5.5.62<br>
+opencv-python-headless       4.6.0.66<br>
+opt-einsum                   3.3.0<br>
+packaging                    21.3<br>
+pandas                       1.5.1<br>
+Pillow                       9.2.0<br>
+pip                          22.3.1<br>
+protobuf                     3.19.4<br>
+pyasn1                       0.4.8<br>
+pyasn1-modules               0.2.8<br>
+pydantic                     1.10.2<br>
+PyMatting                    1.1.8<br>
+pyparsing                    3.0.7<br>
+pyreadline3                  3.4.1<br>
+PySocks                      1.7.1<br>
+python-dateutil              2.8.2<br>
+python-multipart             0.0.5<br>
+pytz                         2022.6<br>
+PyWavelets                   1.4.1<br>
+rembg                        2.0.25<br>
+requests                     2.27.1<br>
+requests-oauthlib            1.3.1<br>
+rsa                          4.8<br>
+scikit-image                 0.19.3<br>
+scikit-learn                 1.1.3<br>
+scipy                        1.7.3<br>
+sympy                        1.11.1<br>
+tdqm                         0.0.1<br>
+tensorboard                  2.11.0<br>
+tensorboard-data-server      0.6.1<br>
+tensorboard-plugin-wit       1.8.1<br>
+tensorflow                   2.11.0<br>
+tensorflow-estimator         2.11.0<br>
+tensorflow-gpu               2.7.0<br>
+tensorflow-intel             2.11.0<br>
+tensorflow-io-gcs-filesystem 0.23.1<br>
+torch                        1.13.1<br>
+torchaudio                   0.13.1<br>
+torchvision                  0.14.1<br>
+watchdog                     2.1.9<br>
+Werkzeug                     2.2.2<br>
 2. Download all the files from the Github directory
-->KSW_2022_Fall_Program/TopGun/code/Flask/
+->**KSW_2022_Fall_Program/TopGun/code/Flask/**
 3. Then name the folder to 'Flask'
 4. Download all the files from the Shared Google Drive directory
-->Shared with me/Dataset/Flask
+->**Shared with me/Dataset/Flask**
 5. Then, place the downloaded files from Shared Google Drive into the Flask folder
-6. Run CMD and type in the command to run the Flask server
-->python server.py
+6. Type **python server.py** command to run the Flask server in CMD
+
 
 ### Android
-1. Run the Android application after running the server.
-
+1. Run the flask sever.
+2. In ResultActivty.java and Sever.java, change the String ipv4Address value to 2nd ip address at the CMD when running the flask
+3. In ResultActivty.java and Sever.java, change the String portNumber to 2nd port number at the CMD when running the flask
 
 <br>
 
@@ -140,3 +141,4 @@ Werkzeug                     2.2.2
 
 
    
+<br><br>
