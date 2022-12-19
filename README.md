@@ -38,11 +38,11 @@ There are two universal ways to measure sugar levels: The destructive sugar leve
 #### Download the Dataset folder from google Drive
 
 ### Machine Learning
-1. Install the modules using the below command at the terminal.
-pip install pandas
-pip install numpy
-pip install sckit-learn
-pip install joblib
+1. Install the modules using the below command at the terminal.  
+pip install pandas  
+pip install numpy  
+pip install sckit-learn  
+pip install joblib  
 2. Insert the low.pkl, medium.pkl, high.pkl files into the path of Machine_Learning/ensemble/models/ from ML_3models folder in dataset
 3. You can set the terminal path to '.../Machine_Learning/' and execute it.
 ### Deep Learning
